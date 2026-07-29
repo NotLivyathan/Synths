@@ -8,13 +8,13 @@
 
 This proposal covers Synths as a playable round-start species. Synths are a species of synthetic androids created by Vader-San.
 
-Synths are a humanoid species that vaguely resemble reptilians in aesthetic. Although reminiscent of Reptilians, Synths easily manage to stand out, featuring expressive visors, vibrant color palletes, and an array of LED lights that provide them with a visual distinct, but inoffensive appearance. And their modular origins allow room for them to be very customizable.
+Synths are a humanoid species that vaguely resemble reptilians in aesthetic. Although reminiscent of Reptilians, Synths easily manage to stand out, featuring expressive visors, vibrant color palletes, and an array of LED lights that provide them with a visually distinct, but inoffensive appearance. And their modular origins allow room for them to be very customizable.
 
 ## Background
 
 Synths have always been a fairly popular species since their inception, and have managed to make appearances in multiple games thanks to the talents of very devoted creators. At least one even officially.
 
-Despite this, and despite a definite interest among subsets of both communities, Synths have never existed in any serious capacity within Space Station 13 or 14. A single SS14 fork has added them as a playable species, and they saw immediate and frankly shocking popularity upon release.
+Despite this, and despite a definite interest among subsets of both communities, Synths have never existed in any serious capacity within Space Station 13 or 14. So far, multiple SS14 downstreams have added them as a playable species, to shockingly positive reception.
 
 As such, the goal of this document is to introduce Synths to the broader SS14 community, and implement them in such a way that they provide interesting new (mechanical and roleplay) experiences to the players that would be interacting with them.
 
@@ -24,7 +24,7 @@ Although similar to Reptilians in aesthetic, Synths share almost nothing in comm
 
 ### Core Visual Elements
 
-Synths are bipedal, featuring reptile-like heads and tails, visors that display the Synth's eyes, antenna-like horns, and an assortment of highly customizable status lights. Synths communicate at a vocal frequency that, conveniently, happens to be very similar to that which a standard Cyborg does. Albeit with room for replacement in the future. Similar to Reptilians, their tails protrude from their jumpsuits/hardsuits, but their digitigrade legs allow them to be easily distinguished from Reptilians. Synths tend to be tall and slender, but their sizes may vary based on personal preference or occupational requirements.
+Synths are bipedal, featuring reptile-like heads and tails, visors that display the Synth's eyes, horn-like antennas, and an assortment of highly customizable status lights. Synths communicate at a vocal frequency that, conveniently, happens to be very similar to that which a standard Cyborg does. Albeit with room for replacement in the future. Similar to Reptilians, their tails protrude from their jumpsuits/hardsuits, but their digitigrade legs allow them to be easily distinguished from Reptilians. Synths tend to be tall and slender, but their sizes may vary based on personal preference or occupational requirements.
 
 ### Naming Convention
 
@@ -32,48 +32,47 @@ Synths lack a conventional naming convention, in that nothing necessarily doesn'
 
 ### Special Features
 
-#### Nanites/Inert Nanites
+#### Internal Batteries
 
-Nanites are a special reagent that can be created through chemistry using various complex, but relatively simple-to-obtain ingredients in addition to inert nanites. Inert nanites in comparison are simple to create and can even be obtained from spilled Synth blood in an emergency. Both nanites and inert nanites will heal Synths to varying degrees of effectiveness, with nanites being the most effective means of treating any injuries a Synth may obtain. Inert nanites are still useful, however, in that they convert into active nanites when metabolized within a Synth at a ratio of roughly 2:1.
+Similarly to Cyborgs, Synths require power for their bodies to function. Unlike Cyborgs, however, their batteries are internal and cannot be removed without surgery, meaning upgrades are not currently be possible. Despite this, Synth chassis are better optimized and last longer without needing recharged.
 
-Nanites are incredibly lethal to organics and should never be consumed by non-Synths under any circumstances, as even a small amount is capable of extreme injury.
+If depleted, Synths will suffer the same effects as Cyborgs, slowing down as basic functions begin to fail.
 
-Inert nanites can be consumed by organics but will cause a small build-up of poison, so it is equally advisable that they are avoided by non-Synths.
+Additionally, Synths feature a miniature bioreactor as part of their stomach, which processes organic matter to generate power and faciliate autonomous bodily repair, allowing nutriment to be consumed for charge.
 
-#### Multi-reagent Bloodstream
+#### Internal Nanites
 
-Synths feature a capillary system, consisting of nodes and connecting tubes filled with a purple-colored reagent (fullerene), that is used for transporting nanites through a Synth's body. It is due to this system, that Synths bleed a mix of both fullerene (or carbon-based blood) and nanites.
+Due to the complexity of their chassis, normal healing sources are significantly less effective when used on Synths, including topicals. 
+However, internal nanites allow them to passively recover from Brute, Burn, and Cellular damage over time at the cost of satiation. 
 
-Synths do not recover lost blood passively as other species do and cannot take bloodpacks. Instead, Synths must consume material, or nutriment, in order for their body to create more fullerene. Nanites, however, are restored passively so long as a Synth's fullerene threshold is high enough.
+Autonmous repairs are slow and quickly deplete a Synth's hunger, resulting in starvation if over-relied on, and will eventually stop if a Synth's bioreactor is starved.
 
-As long as a Synth's nanite supply is not empty, they will passively heal small amounts of physical damage and restore lost blood. However, this comes at the cost of depleting a Synth's nanite supply, which can only be restored through consuming nanites as a reagent or, as mentioned above, passively so long as their fullerene threshold is high enough.
+#### Synth Bloodstreams
 
-So to recap: food = fullerene, fullerene = nanites, nanites = passive healing/blood restoration
+Synths contain fullerene, a carbon-based blood-like solution which assists their internal nanites in performing repairs. As their bloodstream depletes, autonomous repairs will slow down, and eventually stop completely once below 30% blood level.
 
-As such, a Synth's biggest threat is bloodloss, since it takes time to recover from and cannot be circumvented through bloodpacks.
+As fullerene is carbon-based, Synths can consume carbon to restore depleted blood, similar to iron or copper for other species. In the event of an emergency, Synth blood packs can be crafted at a medical techfab for plastic and diamond.
+
+Due to the complexity of their chassis, Synth bloodstreams are virtually inacessible through normal means, rendering injections impossible and oral administration required for metabolization. Needles and hyposprays will not work on Synths.
+
+#### Resistances
+
+Synths are resistant to most forms of damage, to varying degrees, and immune to Asphyxiation, as they do not breathe, but take extra damage from Shock and Pierce.
+
+Additionally, despite being a machine species, they are still susceptible to Cellular damage, albeit not from the same sources as organic species. Instead, Synths receive small amounts of Cellular damage when receiving Shock damage, due to it affecting their internal nanites.
+
+EMPs are dangerous but not lethal, capable of completely depleting their internal batteries and dealing extra Shock damage to Synths, as well as disrupting basic functions.
 
 #### Central Computing Unit
 
-Synths possess a CCU that functions as their brain. Functionally, a Synth's CCU is very similar to a Cyborg's positronic brain, meaning their consciousness remains active despite the CCU being removed. CCU's can also be inserted into a Cyborg chassis without the need of a man-machine interface.
+Synths possess a CCU in place of an organic brain. Functionally, their CCU is very similar to a Cyborg's positronic brain, meaning their consciousness remains active despite the CCU being removed. CCUs can also be inserted into cyborg chassis without the need of a man-machine interface.
 
-Currently, CCU's are also capable of speach and are essentially 1:1 with positronic brains in terms of mechanics. This will most likely change for balancing.
+It remains to be decided if Synth CCU should be capable of speech or not.
 
-#### Internal Batteries
+#### Nanites
 
-Similarly to Cyborgs, Synths require power for their bodies to function, but unlike Cyborgs, their batteries are internal and cannot be removed without surgery, meaning upgrades are not currently possible. Despite this, Synth batteries are better optimized and last longer without needing to be charged at a charging station.
+Nanites is a special new reagent that can be created through chemistry. It requires 5 Carbon, 5 Copper, 5 Fersilicite, 2 Hydrogen, 1 Oxygen, and 1 Sulfuric Acid, and can be synthesized using an electrolysis unit, resulting in 20 units of Nanites. 
 
-Potential future upgrades could include a small charge recovery from metabolizing exotic reagents such as plasma or uranium, and a smaller recovery from nutriment (i.e. traditional food).
+Nanites function as the most effective means of treating injuries in Synths, effectively serving as their Omnizine, and even works on the dead. It heals them at a rate slightly higher than Omnizine, but comes with a dangerous OD if the dosage exceeds 10 units.
 
-#### Medical Treatment
-
-Synths metabolize medical reagents at roughly 50% effectiveness when alive, but continue to metabolize reagents even after death — albeit at a further reduced effectiveness (25%) — provided they have nanites in their bloodstream. Nanites metabolize at 100% effectiveness regardless of mob state, but inert nanites cannot be converted to active nanites if a Synth is dead, meaning inert nanites are functionally useless to dead Synths.
-
-Topicals are half as effective on Synths and require a longer doafter, and as mentioned above, bloodpacks cannot be used on them at all.
-
-Synths are unable to be injected due to the complexity of their capillary system and the toughness of their skin, meaning reagents must be ingested orally and their blood can only be extracted from open wounds.
-
-#### Hungerless
-
-Synths do not require food as organic species do, as they do not starve, but they still must consume material or nutriment in order restore lost blood. Food may also be used to regain small amounts of charge. 
-
-Synths do require water, however, as their internal systems require consistent cooling. If starvation/dehydration damage exists, they could potentially overheat if dehydrated.
+Additionally, organics suffer this OD regardless of the dosage, resulting in extreme lethal injury if metabolized by non-Synths, with as little as 10 units being enough to critically injure a Human.
