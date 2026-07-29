@@ -42,10 +42,9 @@ Additionally, Synths feature a miniature bioreactor as part of their stomach, wh
 
 #### Internal Nanites
 
-Due to the complexity of their chassis, normal healing sources are significantly less effective when used on Synths, including topicals. 
-However, internal nanites allow them to passively recover from Brute, Burn, and Cellular damage over time at the cost of satiation. 
+Internal nanites allow them to passively recover from Brute and Burn damage over time at the cost of satiation. (Brute and Burn at 0.75 per tick, which translates to roughly 0.25 for each Brute damage type and 0.185~ for each Burn damage type, as actual healing would be 0.75 divided by 3 (for Brute) and 4 (for Burn).  Values can be further tweaked.)
 
-Autonmous repairs are slow and quickly deplete a Synth's hunger, resulting in starvation if over-relied on, and will eventually stop if a Synth's bioreactor is starved.
+Autonmous repairs are slow and quickly deplete a Synth's hunger, resulting in starvation if over-relied on, and will eventually stop if a Synth's bioreactor is starved. (Passive healing stops if hunger reaches <50 (starvation).)
 
 #### Synth Bloodstreams
 
@@ -53,15 +52,13 @@ Synths contain fullerene, a carbon-based blood-like solution which assists their
 
 As fullerene is carbon-based, Synths can consume carbon to restore depleted blood, similar to iron or copper for other species. In the event of an emergency, Synth blood packs can be crafted at a medical techfab for plastic and diamond.
 
-Due to the complexity of their chassis, Synth bloodstreams are virtually inacessible through normal means, rendering injections impossible and oral administration required for metabolization. Needles and hyposprays will not work on Synths.
+Due to the complexity of their chassis, Synth bloodstreams are virtually inacessible through normal means, rendering injections impossible and oral administration required for metabolization. Needles and hyposprays will not work on Synths. (Consequentially, reagents ingested orally are 50% less effective than when injected into the bloodstream, resulting in slower, weaker application in Synths.)
 
 #### Resistances
 
-Synths are resistant to most forms of damage, to varying degrees, and immune to Asphyxiation, as they do not breathe, but take extra damage from Shock and Pierce.
+Synths are required to breathe, but will suffer Heat damage instead of Asphyxiation where breathing fails. Specifically what they breathe remains to be decided.
 
-Additionally, despite being a machine species, they are still susceptible to Cellular damage, albeit not from the same sources as organic species. Instead, Synths receive small amounts of Cellular damage when receiving Shock damage, due to it affecting their internal nanites.
-
-EMPs are dangerous but not lethal, capable of completely depleting their internal batteries and dealing extra Shock damage to Synths, as well as disrupting basic functions.
+Exact effects of EMPs remain undecided, but could range anywhere between completely depleting a Synth's internal battery (which could be minimized with preemptive nutriment consumption to immediately begin recharging the battery on EMP), or an effect similar to a flash, where they're briefly disabled.
 
 #### Central Computing Unit
 
@@ -73,6 +70,6 @@ It remains to be decided if Synth CCU should be capable of speech or not.
 
 Nanites is a special new reagent that can be created through chemistry. It requires 5 Carbon, 5 Copper, 5 Fersilicite, 2 Hydrogen, 1 Oxygen, and 1 Sulfuric Acid, and can be synthesized using an electrolysis unit, resulting in 20 units of Nanites. 
 
-Nanites function as the most effective means of treating injuries in Synths, effectively serving as their Omnizine, and even works on the dead. It heals them at a rate slightly higher than Omnizine, but comes with a dangerous OD if the dosage exceeds 10 units.
+Nanites function as the most effective means of treating injuries in Synths, effectively serving as their Omnizine, and even works on the dead. It heals them at a rate slightly higher than Omnizine, but comes with a dangerous OD if the dosage exceeds 10.5 units.
 
-Additionally, organics suffer this OD regardless of the dosage, resulting in extreme lethal injury if metabolized by non-Synths, with as little as 10 units being enough to critically injure a Human.
+Additionally, organics suffer this OD regardless of the dosage, resulting in an undecided degree of injury, probably relative to Amatoxin or something. 
